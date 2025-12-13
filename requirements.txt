@@ -6,4 +6,6 @@ langchain-openai==0.2.6
 
 langchain-community==0.3.31
 
+chromadb
+
 pydantic
