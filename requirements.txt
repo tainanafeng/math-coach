@@ -9,3 +9,5 @@ langchain-community==0.3.31
 chromadb
 
 pydantic
+
+ddgs==9.6.1
