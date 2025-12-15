@@ -11,3 +11,7 @@ chromadb
 pydantic
 
 ddgs==9.6.1
+
+python-docx
+
+pypdf
