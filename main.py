@@ -8,6 +8,7 @@ from utils.latex_postprocess import format_latex
 from db.safe_crud import load_messages, save_message
 from config.users_account import TEST_USERS
 from utils.error_handler import safe_call, format_error_msg
+from utils.input_builder import build_user_input
 
 from langchain.agents import AgentExecutor
 import streamlit as st
@@ -42,7 +43,7 @@ def ask_ai(username: str, input_msg: str):
     )
     if err:
         return {"answer": format_error_msg(err)}
-    #print(context_type)
+    print(context_type)
 
     # RAG 獲得教學範例
     teaching_example, err = safe_call(
@@ -145,6 +146,10 @@ def main_page():
     with st.form("form", clear_on_submit=True):
 
         text = st.text_area("🧑‍🎓 You :", placeholder="請提出問題")
+
+        # 使用者上傳文檔
+        uploaded_file = st.file_uploader("上傳 Word / PDF 題目（選填）",type=["pdf", "docx", "doc"])
+
         submitted = st.form_submit_button("送出", use_container_width=True)
 
         if submitted and text and not st.session_state["is_generating"]:
@@ -154,6 +159,7 @@ def main_page():
             # 存使用者訊息到 session_state
             st.session_state[msg_key].append({"role": "user", "content": text})
 
+
             with chat_container:
                 # 立刻顯示使用者輸入訊息
                 st.code(text)
@@ -161,7 +167,8 @@ def main_page():
 
                 # 呼叫 AI
                 with st.spinner("請耐心等待 :hourglass:"):
-                    ai_reply = ask_ai(username, text)["answer"]
+                    full_input = build_user_input(text, uploaded_file)
+                    ai_reply = ask_ai(username, full_input)["answer"]
 
             # 存 AI 回覆到 session_state
             st.session_state[msg_key].append({"role": "assistant", "content": ai_reply})
