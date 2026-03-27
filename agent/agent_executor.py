@@ -2,7 +2,7 @@
 from agent_tools.registry import tools
 
 from langchain_openai import ChatOpenAI
-from langchain.agents import create_react_agent
+from langchain.agents import create_agent
 
 import os
 
@@ -19,15 +19,9 @@ chat_model = ChatOpenAI(model='gpt-5-nano',
 
 # 功能: 建立代理
 def build_agent_executor():
-    agent = create_react_agent(
-        llm=chat_model,
-        tools=tools
-    )
-    
-    agent_executor = AgentExecutor(
-        agent=agent,
+    agent_executor = create_agent(
         tools=tools,
-        verbose=True
+        model=chat_model
     )
 
     return agent_executor
