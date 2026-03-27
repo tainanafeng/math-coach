@@ -22,5 +22,6 @@ else:
         "manager": "test_123",
         "mom": "test_123",
         "dad": "test_123",
-        "professor": "test_123"
+        "professor": "test_123",
+        "viewer": "test_123",
     }
