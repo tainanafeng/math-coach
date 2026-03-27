@@ -1,6 +1,0 @@
-[theme]
-primaryColor = "#D2B48C" # 淺木色（按鈕、選取框、重點）
-backgroundColor = "#FDFBF7" # 極淺奶霜色（主背景）
-secondaryBackgroundColor = "#EFE9DB" # 溫柔燕麥色（輸入框、側邊欄、下拉選單）
-textColor = "#5D4037" # 深咖啡（文字）
-font = "sans serif" # 字體
