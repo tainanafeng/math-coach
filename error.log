@@ -1,0 +1,1028 @@
+2026-03-21 15:06:28,320 [ERROR] Traceback (most recent call last):
+  File "C:\Users\taina\Desktop\new_test\1.0\utils\error_handler.py", line 38, in safe_call
+    return func(*args, **kwargs), None
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 3155, in invoke
+    input_ = context.run(step.invoke, input_, config, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 3881, in invoke
+    output = {
+             ^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 3882, in <dictcomp>
+    key: future.result()
+         ^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 3865, in _invoke_step
+    return context.run(
+           ^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 5018, in invoke
+    return self._call_with_config(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 2060, in _call_with_config
+    context.run(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\config.py", line 461, in call_func_with_variable_args
+    return func(input, **kwargs)  # type: ignore[call-arg]
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 4875, in _invoke
+    output = call_func_with_variable_args(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\config.py", line 461, in call_func_with_variable_args
+    return func(input, **kwargs)  # type: ignore[call-arg]
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\Desktop\new_test\1.0\rag\context_rag.py", line 89, in retriever_function
+    retriever_result = context_example_retriever.get_relevant_documents(user_input["input"])
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\pydantic\main.py", line 1026, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'VectorStoreRetriever' object has no attribute 'get_relevant_documents'
+
+2026-03-21 15:06:28,826 [ERROR] Traceback (most recent call last):
+  File "C:\Users\taina\Desktop\new_test\1.0\utils\error_handler.py", line 38, in safe_call
+    return func(*args, **kwargs), None
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 3155, in invoke
+    input_ = context.run(step.invoke, input_, config, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 3881, in invoke
+    output = {
+             ^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 3882, in <dictcomp>
+    key: future.result()
+         ^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 3865, in _invoke_step
+    return context.run(
+           ^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 5018, in invoke
+    return self._call_with_config(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 2060, in _call_with_config
+    context.run(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\config.py", line 461, in call_func_with_variable_args
+    return func(input, **kwargs)  # type: ignore[call-arg]
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 4875, in _invoke
+    output = call_func_with_variable_args(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\config.py", line 461, in call_func_with_variable_args
+    return func(input, **kwargs)  # type: ignore[call-arg]
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\Desktop\new_test\1.0\rag\context_rag.py", line 89, in retriever_function
+    retriever_result = context_example_retriever.get_relevant_documents(user_input["input"])
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\pydantic\main.py", line 1026, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'VectorStoreRetriever' object has no attribute 'get_relevant_documents'
+
+2026-03-21 15:06:29,333 [ERROR] Traceback (most recent call last):
+  File "C:\Users\taina\Desktop\new_test\1.0\utils\error_handler.py", line 38, in safe_call
+    return func(*args, **kwargs), None
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 3155, in invoke
+    input_ = context.run(step.invoke, input_, config, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 3881, in invoke
+    output = {
+             ^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 3882, in <dictcomp>
+    key: future.result()
+         ^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 3865, in _invoke_step
+    return context.run(
+           ^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 5018, in invoke
+    return self._call_with_config(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 2060, in _call_with_config
+    context.run(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\config.py", line 461, in call_func_with_variable_args
+    return func(input, **kwargs)  # type: ignore[call-arg]
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 4875, in _invoke
+    output = call_func_with_variable_args(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\config.py", line 461, in call_func_with_variable_args
+    return func(input, **kwargs)  # type: ignore[call-arg]
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\Desktop\new_test\1.0\rag\context_rag.py", line 89, in retriever_function
+    retriever_result = context_example_retriever.get_relevant_documents(user_input["input"])
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\pydantic\main.py", line 1026, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'VectorStoreRetriever' object has no attribute 'get_relevant_documents'
+
+2026-03-21 15:07:55,063 [ERROR] Traceback (most recent call last):
+  File "C:\Users\taina\Desktop\new_test\1.0\utils\error_handler.py", line 38, in safe_call
+    return func(*args, **kwargs), None
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 3155, in invoke
+    input_ = context.run(step.invoke, input_, config, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 3881, in invoke
+    output = {
+             ^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 3882, in <dictcomp>
+    key: future.result()
+         ^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 3865, in _invoke_step
+    return context.run(
+           ^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 5018, in invoke
+    return self._call_with_config(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 2060, in _call_with_config
+    context.run(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\config.py", line 461, in call_func_with_variable_args
+    return func(input, **kwargs)  # type: ignore[call-arg]
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 4875, in _invoke
+    output = call_func_with_variable_args(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\config.py", line 461, in call_func_with_variable_args
+    return func(input, **kwargs)  # type: ignore[call-arg]
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\Desktop\new_test\1.0\rag\context_rag.py", line 89, in retriever_function
+    retriever_result = context_example_retriever.get_relevant_documents(user_input["input"])
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\pydantic\main.py", line 1026, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'VectorStoreRetriever' object has no attribute 'get_relevant_documents'
+
+2026-03-21 15:07:55,572 [ERROR] Traceback (most recent call last):
+  File "C:\Users\taina\Desktop\new_test\1.0\utils\error_handler.py", line 38, in safe_call
+    return func(*args, **kwargs), None
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 3155, in invoke
+    input_ = context.run(step.invoke, input_, config, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 3881, in invoke
+    output = {
+             ^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 3882, in <dictcomp>
+    key: future.result()
+         ^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 3865, in _invoke_step
+    return context.run(
+           ^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 5018, in invoke
+    return self._call_with_config(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 2060, in _call_with_config
+    context.run(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\config.py", line 461, in call_func_with_variable_args
+    return func(input, **kwargs)  # type: ignore[call-arg]
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 4875, in _invoke
+    output = call_func_with_variable_args(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\config.py", line 461, in call_func_with_variable_args
+    return func(input, **kwargs)  # type: ignore[call-arg]
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\Desktop\new_test\1.0\rag\context_rag.py", line 89, in retriever_function
+    retriever_result = context_example_retriever.get_relevant_documents(user_input["input"])
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\pydantic\main.py", line 1026, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'VectorStoreRetriever' object has no attribute 'get_relevant_documents'
+
+2026-03-21 15:07:56,076 [ERROR] Traceback (most recent call last):
+  File "C:\Users\taina\Desktop\new_test\1.0\utils\error_handler.py", line 38, in safe_call
+    return func(*args, **kwargs), None
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 3155, in invoke
+    input_ = context.run(step.invoke, input_, config, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 3881, in invoke
+    output = {
+             ^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 3882, in <dictcomp>
+    key: future.result()
+         ^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 3865, in _invoke_step
+    return context.run(
+           ^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 5018, in invoke
+    return self._call_with_config(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 2060, in _call_with_config
+    context.run(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\config.py", line 461, in call_func_with_variable_args
+    return func(input, **kwargs)  # type: ignore[call-arg]
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 4875, in _invoke
+    output = call_func_with_variable_args(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\config.py", line 461, in call_func_with_variable_args
+    return func(input, **kwargs)  # type: ignore[call-arg]
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\Desktop\new_test\1.0\rag\context_rag.py", line 89, in retriever_function
+    retriever_result = context_example_retriever.get_relevant_documents(user_input["input"])
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\pydantic\main.py", line 1026, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'VectorStoreRetriever' object has no attribute 'get_relevant_documents'
+
+2026-03-21 15:18:29,644 [ERROR] Traceback (most recent call last):
+  File "C:\Users\taina\Desktop\new_test\1.0\utils\error_handler.py", line 38, in safe_call
+    return func(*args, **kwargs), None
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\pregel\main.py", line 3292, in invoke
+    for chunk in self.stream(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\pregel\main.py", line 2725, in stream
+    for _ in runner.tick(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\pregel\_runner.py", line 167, in tick
+    run_with_retry(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\pregel\_retry.py", line 96, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\_internal\_runnable.py", line 656, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\_internal\_runnable.py", line 400, in invoke
+    ret = self.func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain\agents\factory.py", line 1301, in model_node
+    model_response = _execute_model_sync(request)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain\agents\factory.py", line 1273, in _execute_model_sync
+    output = model_.invoke(messages)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 5695, in invoke
+    return self.bound.invoke(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\language_models\chat_models.py", line 402, in invoke
+    self.generate_prompt(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1149, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\language_models\chat_models.py", line 958, in generate
+    self._generate_with_cache(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1261, in _generate_with_cache
+    result = self._generate(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_openai\chat_models\base.py", line 1490, in _generate
+    _handle_openai_bad_request(e)
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_openai\chat_models\base.py", line 1487, in _generate
+    raw_response = self.client.with_raw_response.create(**payload)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\_legacy_response.py", line 367, in wrapped
+    return cast(LegacyAPIResponse[R], func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\_utils\_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\resources\chat\completions\completions.py", line 1211, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "Invalid 'messages': empty array. Expected an array with minimum length 1, but got an empty array instead.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'empty_array'}}
+During task with name 'model' and id 'c8758d62-4ac9-64ec-660e-0ac2cae8fe9b'
+
+2026-03-21 15:18:31,085 [ERROR] Traceback (most recent call last):
+  File "C:\Users\taina\Desktop\new_test\1.0\utils\error_handler.py", line 38, in safe_call
+    return func(*args, **kwargs), None
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\pregel\main.py", line 3292, in invoke
+    for chunk in self.stream(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\pregel\main.py", line 2725, in stream
+    for _ in runner.tick(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\pregel\_runner.py", line 167, in tick
+    run_with_retry(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\pregel\_retry.py", line 96, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\_internal\_runnable.py", line 656, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\_internal\_runnable.py", line 400, in invoke
+    ret = self.func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain\agents\factory.py", line 1301, in model_node
+    model_response = _execute_model_sync(request)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain\agents\factory.py", line 1273, in _execute_model_sync
+    output = model_.invoke(messages)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 5695, in invoke
+    return self.bound.invoke(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\language_models\chat_models.py", line 402, in invoke
+    self.generate_prompt(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1149, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\language_models\chat_models.py", line 958, in generate
+    self._generate_with_cache(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1261, in _generate_with_cache
+    result = self._generate(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_openai\chat_models\base.py", line 1490, in _generate
+    _handle_openai_bad_request(e)
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_openai\chat_models\base.py", line 1487, in _generate
+    raw_response = self.client.with_raw_response.create(**payload)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\_legacy_response.py", line 367, in wrapped
+    return cast(LegacyAPIResponse[R], func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\_utils\_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\resources\chat\completions\completions.py", line 1211, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "Invalid 'messages': empty array. Expected an array with minimum length 1, but got an empty array instead.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'empty_array'}}
+During task with name 'model' and id '3b12ed31-688e-753c-5691-25d7ae87c3c2'
+
+2026-03-21 15:18:32,678 [ERROR] Traceback (most recent call last):
+  File "C:\Users\taina\Desktop\new_test\1.0\utils\error_handler.py", line 38, in safe_call
+    return func(*args, **kwargs), None
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\pregel\main.py", line 3292, in invoke
+    for chunk in self.stream(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\pregel\main.py", line 2725, in stream
+    for _ in runner.tick(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\pregel\_runner.py", line 167, in tick
+    run_with_retry(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\pregel\_retry.py", line 96, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\_internal\_runnable.py", line 656, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\_internal\_runnable.py", line 400, in invoke
+    ret = self.func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain\agents\factory.py", line 1301, in model_node
+    model_response = _execute_model_sync(request)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain\agents\factory.py", line 1273, in _execute_model_sync
+    output = model_.invoke(messages)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 5695, in invoke
+    return self.bound.invoke(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\language_models\chat_models.py", line 402, in invoke
+    self.generate_prompt(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1149, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\language_models\chat_models.py", line 958, in generate
+    self._generate_with_cache(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1261, in _generate_with_cache
+    result = self._generate(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_openai\chat_models\base.py", line 1490, in _generate
+    _handle_openai_bad_request(e)
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_openai\chat_models\base.py", line 1487, in _generate
+    raw_response = self.client.with_raw_response.create(**payload)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\_legacy_response.py", line 367, in wrapped
+    return cast(LegacyAPIResponse[R], func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\_utils\_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\resources\chat\completions\completions.py", line 1211, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "Invalid 'messages': empty array. Expected an array with minimum length 1, but got an empty array instead.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'empty_array'}}
+During task with name 'model' and id '72be70b9-51d2-2dbd-6d12-fdd445a47609'
+
+2026-03-21 15:31:26,665 [ERROR] Traceback (most recent call last):
+  File "C:\Users\taina\Desktop\new_test\1.0\utils\error_handler.py", line 38, in safe_call
+    return func(*args, **kwargs), None
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\pregel\main.py", line 3292, in invoke
+    for chunk in self.stream(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\pregel\main.py", line 2725, in stream
+    for _ in runner.tick(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\pregel\_runner.py", line 167, in tick
+    run_with_retry(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\pregel\_retry.py", line 96, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\_internal\_runnable.py", line 656, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\_internal\_runnable.py", line 400, in invoke
+    ret = self.func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain\agents\factory.py", line 1301, in model_node
+    model_response = _execute_model_sync(request)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain\agents\factory.py", line 1273, in _execute_model_sync
+    output = model_.invoke(messages)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 5695, in invoke
+    return self.bound.invoke(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\language_models\chat_models.py", line 402, in invoke
+    self.generate_prompt(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1149, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\language_models\chat_models.py", line 958, in generate
+    self._generate_with_cache(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1261, in _generate_with_cache
+    result = self._generate(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_openai\chat_models\base.py", line 1490, in _generate
+    _handle_openai_bad_request(e)
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_openai\chat_models\base.py", line 1487, in _generate
+    raw_response = self.client.with_raw_response.create(**payload)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\_legacy_response.py", line 367, in wrapped
+    return cast(LegacyAPIResponse[R], func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\_utils\_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\resources\chat\completions\completions.py", line 1211, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "Invalid 'messages': empty array. Expected an array with minimum length 1, but got an empty array instead.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'empty_array'}}
+During task with name 'model' and id '7ce83737-8b76-d264-7223-cee745b8db15'
+
+2026-03-21 15:31:28,233 [ERROR] Traceback (most recent call last):
+  File "C:\Users\taina\Desktop\new_test\1.0\utils\error_handler.py", line 38, in safe_call
+    return func(*args, **kwargs), None
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\pregel\main.py", line 3292, in invoke
+    for chunk in self.stream(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\pregel\main.py", line 2725, in stream
+    for _ in runner.tick(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\pregel\_runner.py", line 167, in tick
+    run_with_retry(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\pregel\_retry.py", line 96, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\_internal\_runnable.py", line 656, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\_internal\_runnable.py", line 400, in invoke
+    ret = self.func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain\agents\factory.py", line 1301, in model_node
+    model_response = _execute_model_sync(request)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain\agents\factory.py", line 1273, in _execute_model_sync
+    output = model_.invoke(messages)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 5695, in invoke
+    return self.bound.invoke(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\language_models\chat_models.py", line 402, in invoke
+    self.generate_prompt(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1149, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\language_models\chat_models.py", line 958, in generate
+    self._generate_with_cache(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1261, in _generate_with_cache
+    result = self._generate(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_openai\chat_models\base.py", line 1490, in _generate
+    _handle_openai_bad_request(e)
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_openai\chat_models\base.py", line 1487, in _generate
+    raw_response = self.client.with_raw_response.create(**payload)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\_legacy_response.py", line 367, in wrapped
+    return cast(LegacyAPIResponse[R], func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\_utils\_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\resources\chat\completions\completions.py", line 1211, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "Invalid 'messages': empty array. Expected an array with minimum length 1, but got an empty array instead.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'empty_array'}}
+During task with name 'model' and id '570a901a-0fd4-1264-0deb-6c1f4980bd63'
+
+2026-03-21 15:31:29,809 [ERROR] Traceback (most recent call last):
+  File "C:\Users\taina\Desktop\new_test\1.0\utils\error_handler.py", line 38, in safe_call
+    return func(*args, **kwargs), None
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\pregel\main.py", line 3292, in invoke
+    for chunk in self.stream(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\pregel\main.py", line 2725, in stream
+    for _ in runner.tick(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\pregel\_runner.py", line 167, in tick
+    run_with_retry(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\pregel\_retry.py", line 96, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\_internal\_runnable.py", line 656, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\_internal\_runnable.py", line 400, in invoke
+    ret = self.func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain\agents\factory.py", line 1301, in model_node
+    model_response = _execute_model_sync(request)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain\agents\factory.py", line 1273, in _execute_model_sync
+    output = model_.invoke(messages)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 5695, in invoke
+    return self.bound.invoke(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\language_models\chat_models.py", line 402, in invoke
+    self.generate_prompt(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1149, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\language_models\chat_models.py", line 958, in generate
+    self._generate_with_cache(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1261, in _generate_with_cache
+    result = self._generate(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_openai\chat_models\base.py", line 1490, in _generate
+    _handle_openai_bad_request(e)
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_openai\chat_models\base.py", line 1487, in _generate
+    raw_response = self.client.with_raw_response.create(**payload)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\_legacy_response.py", line 367, in wrapped
+    return cast(LegacyAPIResponse[R], func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\_utils\_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\resources\chat\completions\completions.py", line 1211, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "Invalid 'messages': empty array. Expected an array with minimum length 1, but got an empty array instead.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'empty_array'}}
+During task with name 'model' and id 'c4c04290-9197-a5e4-7bb4-3a6af2c11d38'
+
+2026-03-21 15:35:46,963 [ERROR] Traceback (most recent call last):
+  File "C:\Users\taina\Desktop\new_test\1.0\utils\error_handler.py", line 38, in safe_call
+    return func(*args, **kwargs), None
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\pregel\main.py", line 3292, in invoke
+    for chunk in self.stream(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\pregel\main.py", line 2725, in stream
+    for _ in runner.tick(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\pregel\_runner.py", line 167, in tick
+    run_with_retry(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\pregel\_retry.py", line 96, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\_internal\_runnable.py", line 656, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\_internal\_runnable.py", line 400, in invoke
+    ret = self.func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain\agents\factory.py", line 1301, in model_node
+    model_response = _execute_model_sync(request)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain\agents\factory.py", line 1273, in _execute_model_sync
+    output = model_.invoke(messages)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 5695, in invoke
+    return self.bound.invoke(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\language_models\chat_models.py", line 402, in invoke
+    self.generate_prompt(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1149, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\language_models\chat_models.py", line 958, in generate
+    self._generate_with_cache(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1261, in _generate_with_cache
+    result = self._generate(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_openai\chat_models\base.py", line 1490, in _generate
+    _handle_openai_bad_request(e)
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_openai\chat_models\base.py", line 1487, in _generate
+    raw_response = self.client.with_raw_response.create(**payload)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\_legacy_response.py", line 367, in wrapped
+    return cast(LegacyAPIResponse[R], func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\_utils\_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\resources\chat\completions\completions.py", line 1211, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "Invalid 'messages': empty array. Expected an array with minimum length 1, but got an empty array instead.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'empty_array'}}
+During task with name 'model' and id '97aaf2d6-b2be-b867-41a9-172b4ff80eec'
+
+2026-03-21 15:35:48,523 [ERROR] Traceback (most recent call last):
+  File "C:\Users\taina\Desktop\new_test\1.0\utils\error_handler.py", line 38, in safe_call
+    return func(*args, **kwargs), None
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\pregel\main.py", line 3292, in invoke
+    for chunk in self.stream(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\pregel\main.py", line 2725, in stream
+    for _ in runner.tick(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\pregel\_runner.py", line 167, in tick
+    run_with_retry(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\pregel\_retry.py", line 96, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\_internal\_runnable.py", line 656, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\_internal\_runnable.py", line 400, in invoke
+    ret = self.func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain\agents\factory.py", line 1301, in model_node
+    model_response = _execute_model_sync(request)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain\agents\factory.py", line 1273, in _execute_model_sync
+    output = model_.invoke(messages)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 5695, in invoke
+    return self.bound.invoke(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\language_models\chat_models.py", line 402, in invoke
+    self.generate_prompt(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1149, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\language_models\chat_models.py", line 958, in generate
+    self._generate_with_cache(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1261, in _generate_with_cache
+    result = self._generate(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_openai\chat_models\base.py", line 1490, in _generate
+    _handle_openai_bad_request(e)
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_openai\chat_models\base.py", line 1487, in _generate
+    raw_response = self.client.with_raw_response.create(**payload)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\_legacy_response.py", line 367, in wrapped
+    return cast(LegacyAPIResponse[R], func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\_utils\_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\resources\chat\completions\completions.py", line 1211, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "Invalid 'messages': empty array. Expected an array with minimum length 1, but got an empty array instead.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'empty_array'}}
+During task with name 'model' and id '8bc35c89-b0f4-6539-b51e-f52c2524d84e'
+
+2026-03-21 15:35:49,502 [ERROR] Traceback (most recent call last):
+  File "C:\Users\taina\Desktop\new_test\1.0\utils\error_handler.py", line 38, in safe_call
+    return func(*args, **kwargs), None
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\pregel\main.py", line 3292, in invoke
+    for chunk in self.stream(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\pregel\main.py", line 2725, in stream
+    for _ in runner.tick(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\pregel\_runner.py", line 167, in tick
+    run_with_retry(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\pregel\_retry.py", line 96, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\_internal\_runnable.py", line 656, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\_internal\_runnable.py", line 400, in invoke
+    ret = self.func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain\agents\factory.py", line 1301, in model_node
+    model_response = _execute_model_sync(request)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain\agents\factory.py", line 1273, in _execute_model_sync
+    output = model_.invoke(messages)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 5695, in invoke
+    return self.bound.invoke(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\language_models\chat_models.py", line 402, in invoke
+    self.generate_prompt(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1149, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\language_models\chat_models.py", line 958, in generate
+    self._generate_with_cache(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1261, in _generate_with_cache
+    result = self._generate(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_openai\chat_models\base.py", line 1490, in _generate
+    _handle_openai_bad_request(e)
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_openai\chat_models\base.py", line 1487, in _generate
+    raw_response = self.client.with_raw_response.create(**payload)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\_legacy_response.py", line 367, in wrapped
+    return cast(LegacyAPIResponse[R], func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\_utils\_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\resources\chat\completions\completions.py", line 1211, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "Invalid 'messages': empty array. Expected an array with minimum length 1, but got an empty array instead.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'empty_array'}}
+During task with name 'model' and id '07090954-1ec7-ce50-fc1d-78d39c3f1d75'
+
+2026-03-21 15:39:33,697 [ERROR] Traceback (most recent call last):
+  File "C:\Users\taina\Desktop\new_test\1.0\utils\error_handler.py", line 38, in safe_call
+    return func(*args, **kwargs), None
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\pregel\main.py", line 3292, in invoke
+    for chunk in self.stream(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\pregel\main.py", line 2725, in stream
+    for _ in runner.tick(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\pregel\_runner.py", line 167, in tick
+    run_with_retry(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\pregel\_retry.py", line 96, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\_internal\_runnable.py", line 656, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\_internal\_runnable.py", line 400, in invoke
+    ret = self.func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain\agents\factory.py", line 1301, in model_node
+    model_response = _execute_model_sync(request)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain\agents\factory.py", line 1273, in _execute_model_sync
+    output = model_.invoke(messages)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 5695, in invoke
+    return self.bound.invoke(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\language_models\chat_models.py", line 402, in invoke
+    self.generate_prompt(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1149, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\language_models\chat_models.py", line 958, in generate
+    self._generate_with_cache(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1261, in _generate_with_cache
+    result = self._generate(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_openai\chat_models\base.py", line 1490, in _generate
+    _handle_openai_bad_request(e)
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_openai\chat_models\base.py", line 1487, in _generate
+    raw_response = self.client.with_raw_response.create(**payload)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\_legacy_response.py", line 367, in wrapped
+    return cast(LegacyAPIResponse[R], func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\_utils\_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\resources\chat\completions\completions.py", line 1211, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "Invalid 'messages': empty array. Expected an array with minimum length 1, but got an empty array instead.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'empty_array'}}
+During task with name 'model' and id 'c6fc4d90-576d-74e3-9381-ede0208bf9d0'
+
+2026-03-21 15:39:34,451 [ERROR] Traceback (most recent call last):
+  File "C:\Users\taina\Desktop\new_test\1.0\utils\error_handler.py", line 38, in safe_call
+    return func(*args, **kwargs), None
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\pregel\main.py", line 3292, in invoke
+    for chunk in self.stream(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\pregel\main.py", line 2725, in stream
+    for _ in runner.tick(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\pregel\_runner.py", line 167, in tick
+    run_with_retry(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\pregel\_retry.py", line 96, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\_internal\_runnable.py", line 656, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\_internal\_runnable.py", line 400, in invoke
+    ret = self.func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain\agents\factory.py", line 1301, in model_node
+    model_response = _execute_model_sync(request)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain\agents\factory.py", line 1273, in _execute_model_sync
+    output = model_.invoke(messages)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 5695, in invoke
+    return self.bound.invoke(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\language_models\chat_models.py", line 402, in invoke
+    self.generate_prompt(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1149, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\language_models\chat_models.py", line 958, in generate
+    self._generate_with_cache(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1261, in _generate_with_cache
+    result = self._generate(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_openai\chat_models\base.py", line 1490, in _generate
+    _handle_openai_bad_request(e)
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_openai\chat_models\base.py", line 1487, in _generate
+    raw_response = self.client.with_raw_response.create(**payload)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\_legacy_response.py", line 367, in wrapped
+    return cast(LegacyAPIResponse[R], func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\_utils\_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\resources\chat\completions\completions.py", line 1211, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "Invalid 'messages': empty array. Expected an array with minimum length 1, but got an empty array instead.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'empty_array'}}
+During task with name 'model' and id 'ba98882c-cc60-60ff-e0a6-bcec4e91fa1e'
+
+2026-03-21 15:39:35,173 [ERROR] Traceback (most recent call last):
+  File "C:\Users\taina\Desktop\new_test\1.0\utils\error_handler.py", line 38, in safe_call
+    return func(*args, **kwargs), None
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\pregel\main.py", line 3292, in invoke
+    for chunk in self.stream(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\pregel\main.py", line 2725, in stream
+    for _ in runner.tick(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\pregel\_runner.py", line 167, in tick
+    run_with_retry(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\pregel\_retry.py", line 96, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\_internal\_runnable.py", line 656, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langgraph\_internal\_runnable.py", line 400, in invoke
+    ret = self.func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain\agents\factory.py", line 1301, in model_node
+    model_response = _execute_model_sync(request)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain\agents\factory.py", line 1273, in _execute_model_sync
+    output = model_.invoke(messages)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 5695, in invoke
+    return self.bound.invoke(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\language_models\chat_models.py", line 402, in invoke
+    self.generate_prompt(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1149, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\language_models\chat_models.py", line 958, in generate
+    self._generate_with_cache(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1261, in _generate_with_cache
+    result = self._generate(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_openai\chat_models\base.py", line 1490, in _generate
+    _handle_openai_bad_request(e)
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_openai\chat_models\base.py", line 1487, in _generate
+    raw_response = self.client.with_raw_response.create(**payload)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\_legacy_response.py", line 367, in wrapped
+    return cast(LegacyAPIResponse[R], func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\_utils\_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\resources\chat\completions\completions.py", line 1211, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "Invalid 'messages': empty array. Expected an array with minimum length 1, but got an empty array instead.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'empty_array'}}
+During task with name 'model' and id 'ca7e88ce-bd4a-f322-d0ad-72eac30625a3'
+
+2026-03-25 14:10:07,393 [ERROR] Traceback (most recent call last):
+  File "C:\Users\taina\Desktop\new_test\1.4\utils\error_handler.py", line 38, in safe_call
+    return func(*args, **kwargs), None
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\runnables\base.py", line 3157, in invoke
+    input_ = context.run(step.invoke, input_, config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\language_models\chat_models.py", line 402, in invoke
+    self.generate_prompt(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1149, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\language_models\chat_models.py", line 958, in generate
+    self._generate_with_cache(
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1261, in _generate_with_cache
+    result = self._generate(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_openai\chat_models\base.py", line 1490, in _generate
+    _handle_openai_bad_request(e)
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\langchain_openai\chat_models\base.py", line 1487, in _generate
+    raw_response = self.client.with_raw_response.create(**payload)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\_legacy_response.py", line 367, in wrapped
+    return cast(LegacyAPIResponse[R], func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\_utils\_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\resources\chat\completions\completions.py", line 1211, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\taina\anaconda3\envs\math_coach\Lib\site-packages\openai\_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "We could not parse the JSON body of your request. (HINT: This likely means you aren't using your HTTP library correctly. The OpenAI API expects a JSON payload, but what was sent was not valid JSON. If you have trouble figuring out how to fix this, please contact us through our help center at help.openai.com.)", 'type': 'invalid_request_error', 'param': None, 'code': None}}
+

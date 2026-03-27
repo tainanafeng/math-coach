@@ -1,0 +1,22 @@
+# pip list   查看 pip 安裝的套件
+
+langchain==1.2.13
+
+langchain-community==0.4.1
+
+langchain-core==1.2.20
+
+langchain-openai==1.1.11
+
+langchain-chroma==1.1.0  
+
+langchain-text-splitters==1.1.1
+
+
+pydantic
+
+ddgs==9.6.1
+
+pypdf
+
+
