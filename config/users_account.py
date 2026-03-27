@@ -19,7 +19,7 @@ else:
         "user8":  "J3cPzL81tV",
         "user9":  "Lw95NqR27B",
         "user10": "Zt28HsQ56M",
-        "manager": "test123",
+        "manager": "test_123",
         "mom": "test_123",
         "dad": "test_123",
         "professor": "test_123"
